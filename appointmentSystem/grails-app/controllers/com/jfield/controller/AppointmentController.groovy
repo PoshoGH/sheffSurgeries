@@ -2,5 +2,5 @@ package com.jfield.controller
 
 class AppointmentController {
 
-    def index() { }
+    def scaffold = com.jfield.model.Appointment
 }

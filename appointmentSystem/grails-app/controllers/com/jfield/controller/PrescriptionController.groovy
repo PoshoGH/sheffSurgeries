@@ -2,5 +2,5 @@ package com.jfield.controller
 
 class PrescriptionController {
 
-    def index() { }
+    def scaffold = com.jfield.model.Prescription
 }
