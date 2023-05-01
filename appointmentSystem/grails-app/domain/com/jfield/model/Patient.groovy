@@ -18,5 +18,5 @@ class Patient
         course size: 5..100
     }
 
-    static hasMany = [enrolments: Prescription]
+
 }
