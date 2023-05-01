@@ -1,7 +1,21 @@
 package com.jfield.model
 
-class Receptionist {
+class Receptionist
+{
+    String ReceptionistID
+    String name
+    
 
-    static constraints = {
+    String toString()
+    {
+        return name
     }
+
+    static constraints =
+    {
+        ReceptionistID unique: true, size: 5..10
+        name size: 5..100
+    }
+
+
 }

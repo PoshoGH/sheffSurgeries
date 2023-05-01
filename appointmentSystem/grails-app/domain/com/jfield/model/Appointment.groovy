@@ -1,7 +1,19 @@
 package com.jfield.model
 
-class Appointment {
+class Appointment
+{
+    String AppointmentID
+    Date dateTime
 
-    static constraints = {
+    String toString()
+    {
+        return dateTime
     }
+    
+        static constraints =
+    {
+        AppointmentID unique: true, size: 5..10
+    }
+
+   
 }

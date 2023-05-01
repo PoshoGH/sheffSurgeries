@@ -1,7 +1,21 @@
 package com.jfield.model
 
-class Nurse {
+class Nurse
+{
+    String NurseID
+    String name
+    
 
-    static constraints = {
+    String toString()
+    {
+        return name
     }
+
+    static constraints =
+    {
+        NurseID unique: true, size: 5..10
+        name size: 5..100
+    }
+
+
 }
