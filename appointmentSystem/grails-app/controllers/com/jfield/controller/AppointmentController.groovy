@@ -1,6 +1,13 @@
 package com.jfield.controller
 
+import grails.gorm.transactions.Transactional
+import com.jfield.model.Appointment
+
+@Transactional
 class AppointmentController {
 
-    def scaffold = com.jfield.model.Appointment
+    static scaffold = Appointment
+
+    // Controller actions and methods
+
 }
