@@ -1,8 +1,9 @@
-package com.jfield
+package com.jfield.model
 
+import grails.gorm.annotation.Entity
+
+@Entity
 class Appointment {
-    static belongsTo = [doctor: "Doctor", patient: "Patient"]
-
     Date appointmentDate
     String description
 
