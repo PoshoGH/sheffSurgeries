@@ -1,4 +1,6 @@
 package com.jfield
+import com.jfield.Doctor
+import com.jfield.Patient
 
 class Appointment {
     static belongsTo = [doctor: Doctor, patient: Patient]
