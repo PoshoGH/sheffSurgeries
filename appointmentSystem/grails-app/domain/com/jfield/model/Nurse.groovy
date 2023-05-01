@@ -1,4 +1,5 @@
 package com.jfield.model
+import com.jfield.Appointment
 
 class Nurse {
     static hasMany = [appointments: Appointment]
