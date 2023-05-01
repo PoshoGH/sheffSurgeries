@@ -1,7 +1,16 @@
 package com.jfield.model
 
-class Surgery {
+class Schedule
+{
+    String SurgeryID
+    String name
 
-    static constraints = {
+    String toString()
+    {
+        return name
     }
+    
+    static constraints = {}
+
+    static hasMany = [appointments: Appointment]
 }
