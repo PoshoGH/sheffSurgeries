@@ -1,19 +1,13 @@
-package com.jfield.model
+package com.jfield
 
-class Appointment
-{
-    String AppointmentID
-    Date dateTime
+class Appointment {
+    static belongsTo = [doctor: Doctor, patient: Patient]
 
-    String toString()
-    {
-        return dateTime
+    Date appointmentDate
+    String description
+
+    static constraints = {
+        appointmentDate nullable: false
+        description nullable: false, maxSize: 255
     }
-    
-        static constraints =
-    {
-        AppointmentID unique: true, size: 5..10
-    }
-
-   
 }

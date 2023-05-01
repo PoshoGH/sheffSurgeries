@@ -1,21 +1,15 @@
 package com.jfield.model
 
-class Nurse
-{
-    String NurseID
-    String name
-    
+class Nurse {
+    static hasMany = [appointments: Appointment]
 
-    String toString()
-    {
-        return name
+    String firstName
+    String lastName
+    String department
+
+    static constraints = {
+        firstName nullable: false
+        lastName nullable: false
+        department nullable: false, maxSize: 100
     }
-
-    static constraints =
-    {
-        NurseID unique: true, size: 5..10
-        name size: 5..100
-    }
-
-
 }
