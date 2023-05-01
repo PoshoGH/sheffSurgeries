@@ -15,7 +15,6 @@ class Patient
     {
         PatientID unique: true, size: 5..10
         name size: 5..100
-        course size: 5..100
     }
 
 
