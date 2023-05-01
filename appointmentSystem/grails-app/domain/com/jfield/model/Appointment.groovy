@@ -1,7 +1,7 @@
 package com.jfield
 
 class Appointment {
-    static belongsTo = [doctor: Doctor, patient: Patient]
+    static belongsTo = [doctor: "Doctor", patient: "Patient"]
 
     Date appointmentDate
     String description
